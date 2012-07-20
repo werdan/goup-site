@@ -1,0 +1,18 @@
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		$("a.cellcontainer").hover(
+			function () {
+			    $(this).find(".not-details").hide();
+			    $(this).find(".details").show();
+			    $(this).find(".project-details-price").css({display: "block"});
+			    $(this).find(".project-details").css({display: "block"});
+			    $(this).find(".project-details-button").css({display: "block"});
+			},
+			function () {
+			    $(this).find(".not-details").css({display: ""});
+			    $(this).find(".details").css({display: ""});
+			}
+		);
+	});
+
+</script>
